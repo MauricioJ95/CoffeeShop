@@ -27,6 +27,11 @@ namespace CoffeeShop.Models
         [Required]
         [RegularExpression(@"^[A-z0-9]{2,}$")]
         public string Password { set; get; }
+
+        public string Gender { get; set; }
+
+        public bool SubscribeToNewsletter { get; set; }
+
         public UserInfo()
         {
         }
