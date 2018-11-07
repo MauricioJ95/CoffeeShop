@@ -9,23 +9,23 @@ namespace CoffeeShop.Models
     public class UserInfo
     {
         [Required] // attributes 
-        [RegularExpression("^[a-zA-Z]{2,}$")]
+        [RegularExpression(@"^[A-z]{2,}$")]
         public string FirstName { set; get; }
 
         [Required]
-        [RegularExpression("^[a-zA-Z]{2,}$")]
+        [RegularExpression(@"^[A-z]{2,}$")]
         public string LastName { set; get; }
-
+        
         [Required]
-        [RegularExpression("^[a-zA-Z][0-9]+@[a-zA-Z]+.[a-z]{2,}$")]
+        [RegularExpression(@"^[A-z0-9]{5,30}@+[a-z0-9]{5,10}.+[a-z0-9]{2,3}$")]
         public string Email { set; get; }
 
         [Required]
-        [RegularExpression("^[0-9]")]
+        [RegularExpression(@"^\d{3}-\d{3}-\d{4}$")]
         public string PhoneNumber { set; get; }
 
         [Required]
-        [RegularExpression("^[a-zA-Z]{2,}$")]
+        [RegularExpression(@"^[A-z0-9]{2,}$")]
         public string Password { set; get; }
         public UserInfo()
         {
