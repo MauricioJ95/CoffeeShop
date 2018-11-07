@@ -3,10 +3,11 @@
     ViewBag.Title = "Register";
 }
 <script type="text/javascript" src="../../Scripts/register.js"></script>
+<link rel="stylesheet" href="../../Content/register.css">
 
 <h2>Register</h2>
 <form action="/Home/AddUser" method="post" onsubmit="return onFormSubmit()" id="register-form">
-    <label class="control-label">First Name:</label> <input type="text" name="FirstName" class="form-control" placeholder="John" />
+    <label class="control-label">First Name:</label> <input type="text" name="FirstName" class="form-control my-form-control" placeholder="John" />
     <label class="control-label">Last Name:</label> <input type="text" name="LastName" class="form-control" placeholder="Smith" />
     <label class="control-label">Email:</label> <input type="text" name="Email" class="form-control" placeholder="geoffm22@gmail.com" id="email" />
     <label class="control-label">Phone Number:</label> <input type="text" name="PhoneNumber" class="form-control" placeholder="111-222-3333" id="phone" />
