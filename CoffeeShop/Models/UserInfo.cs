@@ -25,7 +25,7 @@ namespace CoffeeShop.Models
         public string PhoneNumber { set; get; }
 
         [Required]
-        [RegularExpression(@"^[A-z0-9]{8,}$")]
+        [RegularExpression(@"^[A-z0-9]{2,}$")]
         public string Password { set; get; }
         public UserInfo()
         {
