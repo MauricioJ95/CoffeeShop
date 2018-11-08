@@ -2,21 +2,20 @@
 @{
     ViewBag.Title = "Register";
 }
-<script type="text/javascript" src="../../Scripts/register.js"></script>
-<link rel="stylesheet" href="../../Content/register.css">
+<script type="text/javascript" src="../../Script/RegisterScript.js"></script>
+<link rel="stylesheet" href="../../Content/Register.css">
 
 <h2>Register</h2>
-<form action="/Home/AddUser" method="post" onsubmit="return onFormSubmit()" id="register-form">
+<form action="/Home/AddUser" method="post" onsubmit="return onFormSubmit()" id="Register-form">
     <fieldset>
-        <legend>User Info:</legend>
-        <label class="control-label">First Name:</label> <input type="text" name="FirstName" class="form-control" placeholder="John"/>
-        <label class="control-label">Last Name:</label> <input type="text" name="LastName" class="form-control" placeholder="Smith"/>
-        <label class="control-label">Email:</label> <input type="text" name="Email" class="form-control" placeholder="geoffm22@gmail.com" id="email"/>
-        <label class="control-label">Phone Number:</label> <input type="text" name="PhoneNumber" class="form-control" placeholder="111-222-3333" id="phone"/>
-        <label class="control-label">Password:</label> <input type="password" name="Password" class="form-control" placeholder="Daboss212" id="password"/>
-        <label class="control-label">Confirm Password:</label> <input type="password" name="PasswordConfirm" class="form-control" placeholder="Daboss212" id="password-confirm"/>
-        <label class="control-label">Gender</label> Male: <input type="radio" name="Gender" value="Male"/> Female: <input type="radio" name="Gender" value="Female"/> Other: <input type="radio" name="Gender" value="Other"/>
-        <br/><label class="control-label">Subscribe to Newsletter</label> <input type="checkbox" name="SubscribeToNewsletter"/>
-        <input type="submit" value="Sign Up!" class="btn-default"/>
+        <label class="control-label">First Name:</label> <input type="text" name="FirstName" class="form-control" placeholder="John" />
+        <label class="control-label">Last Name:</label> <input type="text" name="LastName" class="form-control" placeholder="Smith" />
+        <label class="control-label">Email:</label> <input type="text" name="Email" class="form-control" placeholder="geoffm22@gmail.com" id="email" />
+        <label class="control-label">Phone Number:</label> <input type="text" name="PhoneNumber" class="form-control" placeholder="111-222-3333" id="phoneNumber" />
+        <label class="control-label">Password:</label> <input type="password" name="Password" class="form-control" placeholder="Daboss212" id="password" />
+        <label class="control-label">Confirm Password:</label> <input type="password" name="ConfirmPassword" class="form-control" placeholder="Daboss212" id="confirmpassword" />
+        <label class="control-label">Gender</label> Male: <input type="radio" name="Gender" value="Male" /> Female: <input type="radio" name="Gender" value="Female" /> Other: <input type="radio" name="Gender" value="Other" />
+        <br /><label class="control-label">Subscribe to Newsletter</label> <input type="checkbox" name="SubscribeToNewsletter" />
+        <input type="submit" value="Sign Up!" class="btn-default" />
     </fieldset>
 </form>
