@@ -6,7 +6,7 @@ function doesPasswordMatch() {
     var Password = document.getElementById('password').value;
     var ConfirmPassword = document.getElementById('confirmpassword').value;
 
-    return Password == ConfirmPassword
+    return Password == ConfirmPassword;
 }
 
 function isValidPhoneNum(phonenum) {
@@ -15,7 +15,7 @@ function isValidPhoneNum(phonenum) {
 
 function onFormSubmit() {
     var emailAddress = document.getElementById('email').value;
-    var phonenum = document.getElementById('phonenum').value;
+    var phonenum = document.getElementById('phoneNumber').value;
 
     if (!isValidEmail(emailAddress)) {
         alert('You have entered an invalid email address.');
